@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
+} 
+body{
+    display: flex;
+    justify-content: center;
+}
+header{
+    margin-top: -50px;
+    width: 80%;
+    
+    display: grid;
+    grid-template-areas: 
+    "profil profil"
+    "intro intro"
+    "story skill"
+    "education language";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px 20px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.profile-img{
+    margin-top: 90px;
+    background-image: url(img/mastura\ foto.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgb(0, 0, 0,5);
+}
+.panel_intro{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    grid-area: intro;
+    justify-self: center;
+    text-align: center;
+}
+.panel_intro{
+    grid-area: intro;
+    
+}
+.panel_intro .intro1{
+    font-size: 2.5px;
+    
+}
+.panel_intro .intro2{
+    font-size: 1.5px;
+}
+.story{
+    grid-area: story;
+}
+.skill{
+    grid-area: skill;
+}
+.story,.language{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #80e4d0;
+    border-radius: 5px;
+}
+.skill,.education{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #e6a5bb;
+}
+.education{
+    grid-area: education;
+}
+.language{
+    grid-area: language;
+}
